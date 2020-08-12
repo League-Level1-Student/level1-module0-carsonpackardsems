@@ -37,7 +37,7 @@ lb.addActionListener(null);
 rb.addActionListener(null);
 panel.add(lb);
 panel.add(rb);
-frame.pack();
+frame.pack();//
 		// 5. Add an action listener to the leftButton
 
 		// 6. Add an action listener to the rightButton
