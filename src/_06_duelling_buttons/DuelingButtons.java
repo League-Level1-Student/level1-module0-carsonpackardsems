@@ -15,25 +15,29 @@ import javax.swing.JPanel;
 
 public class DuelingButtons implements ActionListener {
 
-	JButton leftButton = new JButton();
-	JButton rightButton = new JButton();
+	JButton lb = new JButton();
+	JButton rb = new JButton();
 
 	Dimension BIG = new Dimension(400, 400);
 	Dimension SMALL = new Dimension(200, 200);
 
-	JFrame frame = new JFrame();
+	JFrame frame = new JFrame("Demanding Buttons");
 	JPanel panel = new JPanel();
-
 	public void run() {
 
 		// 1. Add the panel to the frame
-
+frame.add(panel);
 		// 2. Make the frame visible
-
+frame.setVisible(true);
 		// 3. Set the text of the leftButton to "Click me!"
-
+lb.setText("Click me!");
+rb.setText("Click me!");
 		// 4. Set the text of the rightButton to "Click me!"
-
+lb.addActionListener(null);
+rb.addActionListener(null);
+panel.add(lb);
+panel.add(rb);
+frame.pack();
 		// 5. Add an action listener to the leftButton
 
 		// 6. Add an action listener to the rightButton
